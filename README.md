@@ -14,10 +14,23 @@ Perceba que o "autor" 1 possui 2 telefones diferentes. A fim de normalizar, a co
 ### Segunda Forma Normal (2FN)
 O objetivo é separar as dependências parciais. É preciso que as tabelas estejam na 1FN e que cada uma contenha dados sobre uma e somente uma entidade, onde as colunas que dependem parcialmente da PK.
 Ou seja, quando os atributos não-chaves dependem parcialmente de chave concatenada. Por exemplo:
+
 ![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/3e7d4273-2245-485b-818a-c50d91b98283)
 
 Nesta tabela (Vendas), podemos ver que o "nomecliente" refere-se ao "codcliente", mas não tem total dependencia com a chave primaria na tabela (codvenda). Logo podemos criar uma outra tabela (Cliente) referenciado o "codcliente" com "nomecliente" e seus possiveis atributos. Então a divisão ficaria assim:
 
 ![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/e2c492b1-85e1-467d-8cac-f606808b56bd)
 ![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/633ffb4c-0f59-4821-bf56-eb4c5b57ea24)
+
+
+### Terceira Forma Normal (3FN)
+É uma tabela que, se e somente se, ela estiver na 2FN e todos os atributos não chave primária puderem ser obtidos somente através da chave primária. Por exemplo:
+
+![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/acd32fa9-4876-4e71-9316-981a3abe13df)
+
+Note que o campo "transportadora" pode ser obtido tanto pelo atributo "codEditora" ou por "codTransp", porem pela definição cada atributo só deve ser obtido *única e exclusivamente* através da chave primária. Logo é criado uma nova tabela (Transportadoa) onde, por meio do atributo "codTransp" é possivel acessar a "transportadora". Resultado:
+
+![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/fa834634-7c06-4e99-a33c-035d57da037a)
+![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/d0239deb-257a-40fd-b4ac-85db4a958d2a)
+
 
