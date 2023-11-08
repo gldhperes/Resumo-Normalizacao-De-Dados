@@ -18,5 +18,6 @@ Ou seja, quando os atributos não-chaves dependem parcialmente de chave concaten
 
 Nesta tabela (Vendas), podemos ver que o "nomecliente" refere-se ao "codcliente", mas não tem total dependencia com a chave primaria na tabela (codvenda). Logo podemos criar uma outra tabela (Cliente) referenciado o "codcliente" com "nomecliente" e seus possiveis atributos. Então a divisão ficaria assim:
 
-![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/e71d4411-5d8a-4e82-baf0-7ab59c28c973)
-![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/1911ad20-ecf5-41b7-b8ba-eec120692da8)
+![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/e2c492b1-85e1-467d-8cac-f606808b56bd)
+![image](https://github.com/gldhperes/Resumo-Normalizacao-De-Dados/assets/111309686/633ffb4c-0f59-4821-bf56-eb4c5b57ea24)
+
